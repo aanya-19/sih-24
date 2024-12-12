@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(71,71,71);
+            background: linear-gradient(0deg, rgba(71,71,71,1) 5%, rgba(245,239,235,1) 75%);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative;
+            padding: 20px 15px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .profile {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-content {
+            margin-top: 20px;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            margin: 10px 0;
+        }
+        .card-description {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice A.K. Sharma">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice A.K. Sharma</h3>
+                <p class="card-description">Allahabad High Court</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice R. Mehta">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice R. Mehta</h3>
+                <p class="card-description">Gujarat High Court</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice N. Rao">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice N. Rao</h3>
+                <p class="card-description">Andhra Pradesh High Court</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice P. Banerjee">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice P. Banerjee</h3>
+                <p class="card-description">Calcutta High Court</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice V. Iyer">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice V. Iyer</h3>
+                <p class="card-description">Kerala High Court</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice S. Choudhary">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice S. Choudhary</h3>
+                <p class="card-description">Patna High Court</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice M. Srinivasan">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice M. Srinivasan</h3>
+                <p class="card-description">Madras High Court</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/80" alt="Justice K. Gupta">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Justice K. Gupta</h3>
+                <p class="card-description">Haryana High Court</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

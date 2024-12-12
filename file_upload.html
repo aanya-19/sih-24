@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(0deg, rgba(24,34,39,1) 5%, rgba(86,124,141,1) 75%);
+            background: linear-gradient(0deg, rgba(71,71,71,1) 5%, rgba(245,239,235,1) 75%);
+        }
+        .upload-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%; /* Adjust width to 80% of the viewport */
+            max-width: 300px; /* Maximum width of 300px */
+            height: 200px;
+        }
+        .upload-container h2 {
+            margin-bottom: 20px;
+            color: #333; /* Dark blue text color */
+        }
+        .file-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .upload-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #336699; /* Dark blue background */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .upload-button:hover {
+            background: #2b5782; /* Darker blue on hover */
+        }
+        @media (max-width: 768px) {
+            .upload-container {
+                width: 90%; /* Adjust width to 90% of the viewport on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Case Details</h2>
+    <form>
+        <label for="caseTitle">Case Title:</label>
+        <input type="text" id="caseTitle" name="caseTitle"><br><br>
+
+        <label for="caseStatus">Case Status:</label>
+        <select id="caseStatus" name="caseStatus">
+            <option value="open">Open</option>
+            <option value="closed">Closed</option>
+            <option value="pending">Pending</option>
+        </select><br><br>
+
+        <label for="mainIssue">Main Issue:</label>
+        <textarea id="mainIssue" name="mainIssue" rows="4" cols="50"></textarea><br><br>
+
+        <label for="actsInvolved">Acts Involved:</label>
+        <input type="text" id="actsInvolved" name="actsInvolved"><br><br>
+    </form>
+        <h2>Upload a File</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="file-input" required>
+            <button type="submit" class="upload-button">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
